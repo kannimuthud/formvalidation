@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>FORM</title>
+    
+</head>
+<body>
+    <div class="con">
+
+        <form class="form" name="myForm">
+          <h1>FORM</h1>
+            <label >Email:</label> 
+                <input  placeholder="Enter your email_id" type="email"   id="email" class="inputbox" onmouseout="return emailValidation()" required> <br>
+            <span  id="emailspan"> </span>
+                <label>Password:</label>
+                 <input placeholder="Enter your password" type="password" required id="password" class="inputbox" minlength="8" > <br>
+            <label >First name:</label> 
+                <input placeholder="Enter your first name" type="text" required  id="firstname" class="inputbox" onmouseout="return firstNameValidation()" > <br>
+                <span  id="firstnamespan"> </span>
+                <label class="la">Last name:</label>
+                 <input  placeholder="Enter your last name" type="text" id="lastname"    class="inputbox" required onmouseout="return lastNameValidation()" > <br>
+                 <span  id="lastnamespan"> </span>
+                 <label >Avatar:</label > 
+                    <input type="file"
+                    id="avatar" name="avatar"
+                    accept="image/png, image/jpeg" class="inputimg"  > <br>
+            <label  >DOB:</label> 
+                <input placeholder="Enter your DOB"  type="date" id="dob" required class="inputbox" max='2020-15-15' onmouseout="return dateValidation()"> <br>
+                <span id="dobspan" class="sp">  </span>
+                <label >Gender:</label>
+            <div class="ch" aria-required="true ">
+              <input type="radio" id="male"  name="gender" checked>
+              <label   for="scales">male</label><br>
+              <input  type="radio" id="female" name="gender">
+              <label  for="horns">female</label><br>
+              <input type="radio" id="others" name="gender">
+              <label   for="horns">others</label>
+            </div>
+            <label for="known lang"> Known Languages</label>>
+              <div class="ch">
+                <input type="checkbox" id="lang" checked>
+                <label for="scales">Tamil</label><br>
+                <input type="checkbox" id="lang" >
+                <label for="horns">English</label><br>
+                 <input type="checkbox" id="lang" >
+                <label for="horns">Malayalam</label><br>
+                 <input type="checkbox" id="lang" >
+                <label for="horns">Telungu</label>
+              </div>
+              <br>
+              <label >Phone Number:</label> <br>
+              <div class="pno">
+                <select name="cc" class="cd" >
+                  <option cd="in" value="+91" selected>India (+91) </option>
+                  <optgroup label="othercountry">
+                    <option cd="in" value="+91"  >India (+91) </option>
+                    <option cd="in" value="+61" >Australia (+61) </option>
+                    <option cd="in" value="+1" >Canada (+1) </option>
+                    <option cd="in" value="+98" >Iran (+98) </option>
+  
+                  </optgroup>
+                </select>
+              
+                  <input  placeholder="Enter your mobileNumber" id="mobilenumber" type="tel"   onmouseout="return mobileNumberValidation()" maxlength="10" minlength="10" class="inputbox" > <br><br>
+                </div>     <span id="mobilenumberspan" class="sp"></span><br>
+             
+           
+                <label>URL:</label><br>
+                 <input type="text" id="url" class="inputbox"  onmouseout="return urlValidation()"placeholder="Enter URL like https://"  > <br><br>
+                 <span id="urlspan"> </span><br>
+            <div class="button">
+              <input type="reset" value="Reset">
+              <input type="submit" value="Submit" onclick="return passwordValidation()">    
+            </div>
+            
+    
+    
+    
+        </form>
+    </div>
+  <script src="script.js"></script>  
+</body>
+
+</html>

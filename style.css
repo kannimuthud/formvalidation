@@ -1,0 +1,61 @@
+.con{
+    display: flex;
+    justify-content: center;
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+.inputimg{
+    color: white;
+    height: 20px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.form{
+    width: 50%;
+    height: 140vh;
+    display: grid;
+    border: 1px solid cornflowerblue;
+    padding: 7px 18px;
+    margin: 51px;
+}
+.cd{
+    height: 20px;
+}
+.pno{
+    display: flex;
+}
+
+span{
+    color: red;
+}
+h1{
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.inputbox{
+    height: 20px;
+    width: 100%;
+}
+.ch{
+    position: relative;
+    left: 40px;
+    color: white;
+}
+label{
+    color: white;
+}
